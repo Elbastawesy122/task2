@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="box">
+            <div class="slides">
+                <div class="slide active"><img src="image/img1 (1).png" alt="صورة 1"></div>
+                <div class="slide"><img src="image/img1 (2).png" alt="صورة 2"></div>
+                <div class="slide"><img src="image/img1 (3).png" alt="صورة 3"></div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next" onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="pagination">
+            <img src="image/img1 (1).png" alt="صورة 1" onclick="showSlide(0)" class="thumbnail active">
+            <img src="image/img1 (2).png" alt="صورة 2" onclick="showSlide(1)" class="thumbnail">
+            <img src="image/img1 (3).png" alt="صورة 3" onclick="showSlide(2)" class="thumbnail">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
